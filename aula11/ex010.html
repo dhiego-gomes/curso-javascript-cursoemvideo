@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.gstatic.com">
     <title>DETRAN</title>
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            color: #444444;
+        }
+    </style>
 </head>
 <body>
     <h1>Sistema de Multas</h1>
@@ -20,6 +27,11 @@
             var vel = Number(txtv.value)
 
             res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} km/h.</strong></p>`
+            
+            if (vel > 60) {
+                res.innerHTML += '<p>Vocês foi <strong>multado</strong> por excesso de velocidade.</p>'
+            }
+            
             res.innerHTML += '<p>Dirija sempre com cinto de segurança!</p>'
         }
     </script>

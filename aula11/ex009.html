@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            color: #444444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema da Alfândega</h1>
+
+    <div>
+        Qual o seu país? <input type="text" id="pais">
+        <button type="submit" onclick="verificar()">Enviar</button>
+    </div>
+
+    <div class="res" id="resultado"></div>
+
+    <script>
+        function verificar() {
+            var pais = document.querySelector('input#pais')
+            var res = document.querySelector('div#resultado')
+        
+            res.innerHTML = `<p>Ah, então seu país é <strong>${pais.value}</strong>?</p>`
+
+            if (pais.value == 'Brasil') {
+                res.innerHTML += 'Então, você é Brasileiro!'
+            } else {
+                res.innerHTML += 'Você é estrangeiro.'
+            }
+        }        
+
+    </script>
+    
+</body>
+</html>
