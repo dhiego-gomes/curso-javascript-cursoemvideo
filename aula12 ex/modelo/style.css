@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+    font-family: 'Noto Sans';
+    font-size: 1rem;
+}
+header {
+    color: darkslategrey;
+    text-align: center;
+}
+
+section {
+    background-color: snow;
+    color: darkslategrey;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: snow;
+}
